@@ -1,0 +1,34 @@
+#calc-form {
+    position: relative;
+    width: 270px;
+    margin: auto; 
+}
+#calc-form:after {
+    clear: both;
+}
+#calc-form #number-buttons {
+    float: left;
+    width: 170px;
+}
+#calc-form #operation-buttons {
+    float: right;
+    width: 100px;
+}
+#calc-form .calculate{
+    width: 50px;
+}
+#calc-form input[type="button"] {
+    width: 50px;
+}
+.scoreboard {
+    position: relative;
+    width: 200px;   
+    left: 50%;
+    margin-left: -125px;
+}
+.calculations_container div {
+    cursor: pointer;
+}
+.changed {
+    color: #ff0000;
+}
