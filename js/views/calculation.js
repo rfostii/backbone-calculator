@@ -31,13 +31,13 @@ define([
             this.model.set({secondValue: this.$('.secondValue').text()});
             this.calculate();
         },
-        pressEnter: function(ev) {
-            if (ev.keyCode == 9) {
+        pressEnter: function(ev) {            
+            if (ev.keyCode == 9) { /* tab button */
                 _.delay(function() {
                     this.$('.firstValue').blur();
                     this.$('.secondValue').attr('contenteditable', true).focus();                
-                }, 100);                      
-            } else if (ev.keyCode == 13) {
+                }, 100);                                  
+            } else if (ev.keyCode == 13) { /* enter button */
                 _.delay(function() {
                     this.$(ev.target).blur();                                
                 }, 100);                        
